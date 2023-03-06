@@ -1,0 +1,105 @@
+.header-sec.admin-bar {
+	top: 32px;
+}
+.header-sec {
+    position: fixed;
+    width: 100%;
+    background-color:var(--header);
+    z-index: 9999;
+    top: 0;
+    
+    .register-button {
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+            background: var(--primary);
+            padding: 7px 25px 10px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            border: 1px solid var(--primary);
+        }
+    }
+    .logo a {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--primary);
+
+        img {
+            width: 110px;
+        }
+    }
+    .h-menu {
+        flex: 1;
+        .top-menu {
+            flex: 1;
+        }
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+    }
+    .top-menu ul li a {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: var(--text);
+    }
+    .menu-trigger{
+        flex-direction: column;
+        display: flex;
+        row-gap: 4px;
+        span {
+            background: #000;
+            width: 30px;
+            border: 2px solid;
+            display: none;
+        }
+    }
+
+    // sub-menu
+    .sub-menu {
+        flex-direction: column;
+        row-gap: 11px !important;
+        background: var(--primary);
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    // menu-trigger
+    .menu-trigger.active span:nth-child(2){
+        opacity: 0;
+    }
+    .menu-trigger.active span:nth-child(1){
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-trigger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    // mobile-menu
+    .mobile-menu {
+        right: 0;
+        position: absolute;
+        z-index: 99;
+        display: none;
+        top: 100%;
+        background: var(--primary);
+        width: 180px;
+        padding: 20px;
+    }
+    .m-menu-wrap ul li a {
+        font-size: 16ppx;
+        font-weight: 600;
+        color: var(--white);
+    }
+    .m-menu-wrap ul > * {
+        border-bottom: 2px solid;
+        color: #ddd;
+        padding: 3px 0;
+    }
+}

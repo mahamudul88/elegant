@@ -1,0 +1,73 @@
+@media all and(max-width:1140px){
+    .container {
+        padding: 0 50px !important;
+    }
+}
+@media all and(max-width:993px){
+    // .container{
+    //     padding: 0 30px !important;
+    // }
+    .top-menu{
+        display: none !important;
+    }
+    .register-button{
+        display: none !important;
+    }
+    .menu-trigger span{
+        display: block !important;
+    }
+}
+@media all and(min-width:993px){
+    .mobile-menu{
+        display: none !important;
+    }
+}
+@media all and(max-width:782px){
+    .header-sec.admin-bar {
+        top: 46px;
+    }
+}
+@media all and(max-width:768px){
+    .elementor-column.elementor-col-100, .elementor-column[data-col="100"] {
+        width: 100%;
+        overflow: hidden !important;
+    }
+    .container {
+        padding: 0 !important;
+    }
+    .header-menu {
+        padding: 0 20px;
+    }
+    .port-widget-wrapper {
+        box-shadow: none !important;
+    }
+    .port-widget-text {
+        padding: 20px 0 !important;
+    }
+    .portfolio-item-wrapper{
+        >:not(:last-child){
+            margin-bottom: 40px;
+        }
+    }
+    .portfolio-sec {
+        padding: 50px 0 !important;
+    }
+}
+@media all and(max-width:600px){
+    .header-sec.scrolled {
+        top: 0 !important;
+        transition: all -1s !important;
+    }
+    .portfolio-text {
+        padding: 0px !important;
+    }
+    .portfolio-items {
+        box-shadow: none !important;
+    }
+    .portfolio-title{
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+}
+

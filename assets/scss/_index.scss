@@ -1,0 +1,46 @@
+.loop-sec {
+	padding: 50px 0;
+
+    .post-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-title {
+        h2 a {
+            font-size: 30px;
+            font-weight: 600;
+            color: var(--heading);
+        }
+    }
+    .post-excerpt {
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--text);
+        }
+    }
+    .post-text-wrap {
+        padding: 20px;
+        box-shadow: 0 0 10px 0px #ddd;
+        height: 100%;
+        > :not(:last-child) {
+            margin-bottom: 15px;
+          }
+    }
+    .nav-links .page-numbers {
+        background: var(--primary);
+        padding: 5px 12px;
+        border-radius: 5px;
+        color: var(--white);
+        font-weight: 600;
+    }
+    .navigation.pagination {
+        margin-left: 10px;
+    }
+    .post-thumbnail {
+        img {
+            width: 100%;
+        }
+    }
+
+}

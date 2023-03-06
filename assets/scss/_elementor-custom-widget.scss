@@ -1,0 +1,114 @@
+// ----------------------ELEMENTOR AUTHOR WIDGET--------------------
+.author-element-img {
+	width: 70px;
+	height: 70px;
+
+    img {
+        border-radius: 50px !important;
+    }
+}
+.element-author-section {
+	background: var(--white);
+	padding: 20px;
+	height: 100%;
+	box-shadow: 0 0 1px 1px #ddd;
+
+    h6{
+        font-weight: 700;
+        color: var(--heading);
+    }
+    >:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+.element-author-section {
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: var(--body);
+    }
+}
+
+
+@media all and(max-width:991px){
+    .element-author-wrapper > * {
+        margin-bottom: 25px;
+    }
+    .element-author-cover .row{
+        margin: -10px !important;
+    }
+    .element-author-section{
+        box-shadow: none !important;
+    }
+}
+
+// ----------------------ELEMENTOR TESTIMONIAL SLIDER WIDGET-------------
+.test-cover {
+    background: var(--white);
+    border-radius: 10px;
+
+    .testimonial-wrapper {
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+    }
+    .testimonial-content {
+        padding: 15px 20px 20px 20px;
+    }
+}
+.testimonial-img{
+    width: 60px;
+    height: 60px;
+
+    img{
+        border-radius: 50px !important;
+    }
+}
+.testimonial-title {
+    h6 {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--heading);
+    }
+}
+.testimonial-retting {
+	color: #ff8502;
+}
+.testimonial-designation {
+	font-size: 14px;
+	font-weight: 400;
+}
+.testimonial-content {
+    p {
+        line-height: 27px;
+    }
+}
+.testimonial-slider{
+    .owl-dots {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .owl-dot {
+        background: var(--extra) !important;
+        height: 10px;
+        width: 10px;
+        border-radius: 50px;
+    }
+    .owl-dot.active{
+        background: #ff8502 !important;
+    }
+}
+
+// -----------------ELEMENTOR PORTFOLIO WIDGET---------------
+.port-widget-text {
+    p {
+        color: var(--body);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
